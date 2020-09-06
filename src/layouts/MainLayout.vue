@@ -1,29 +1,27 @@
 <template>
   <q-layout view="lHh Lpr lFf">
     <q-page-container>
-
-       <div class="q-pa-md" >
-        <div class="q-gutter-md" >
-      <q-input
-        v-model="search"
-        color="accent"
-        debounce="500"
-        filled
-        placeholder="What are you looking for?"
-       
+      <!-- <SearchBar></SearchBar>   -->
+ <q-footer elevated >
+          <q-tabs
+        v-model="tab"
       >
-        <template v-slot:append>
-          <q-icon name="search" color="secondary" />
-        </template>
-      </q-input>
-        </div>
-       </div>
+        <q-tab  name="adoption" icon="fas fa-cat"  />
+        <q-tab  name="care" icon="fas fa-hands-helping"  />
+        <q-tab  class="add" name="add" icon="fas fa-plus-circle" />
+        <q-tab alert="white" name="conversations" icon="fas fa-comment" />
+         <q-tab  name="profile" icon="fas fa-user" />
+      </q-tabs>
+    </q-footer>
+    
+        
+
     </q-page-container>
   </q-layout>
 </template>
 
 <script>
-//import EssentialLink from 'components/EssentialLink.vue'
+import SearchBar from 'components/SearchBar.vue'
 
 // const linksData = [
 //   {
@@ -71,36 +69,28 @@
 // ];
 
 export default {
+  // components: {
+  //   SearchBar
+  // },
   data () {
     return {
-      search: ''
+      tab: 'mails'
     }
   }
 }
 </script>
 <style >
-.q-field{
-  background-color: #533549ec;
-   border-radius: 10px;
+
+.q-tab__alert {
+    top: 10px;
+    right: 4px;
 }
-.q-input::placeholder{
- color: #fff !important
+.q-tab__icon{
+  color: #F6B042
 }
-/* #f_c8ca18f0-e686-4869-9007-ec067ce94820{
-   color: #fff !important
-} */
-.q-field__native, .q-field__prefix, .q-field__suffix, .q-field__input {
-  color: #fff !important
-}
-.q-field--filled .q-field__control{
-  border-radius: 10px;
-}
-.text-accent{
-  /* width: 10px; */
-  border-radius: 10px;
-}
-.q-field--filled .q-field__control::after{
-  margin-left: 2vw;
-margin-right: 2vw;
+.add .q-tab__icon{
+  background-color: white;
+border-radius: 100%;
+font-size: 40px;
 }
 </style>
