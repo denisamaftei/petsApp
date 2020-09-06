@@ -27,7 +27,7 @@ export default {
   }
 }
 </script>
-<style scoped>
+<style >
 .q-field{
   background-color: #533549ec;
    border-radius: 10px;

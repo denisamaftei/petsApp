@@ -97,7 +97,7 @@ cfg.module.rules.push({
       // (like functional components as one of the examples),
       // you can manually specify Quasar components/directives to be available everywhere:
       //
-      components: ['QBadge', 'QIcon','QInput'],
+      components: ['QBadge', 'QIcon','QInput','QRouteTab', 'QIntersection', 'QCard', 'QCardSection'],
       // directives: [],
 
       // Quasar plugins
