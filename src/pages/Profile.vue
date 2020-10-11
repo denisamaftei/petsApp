@@ -1,6 +1,5 @@
 <template>
     <q-page-container>
-       <div> Test </div>
         <!-- <AdContainer></AdContainer> -->
         <SearchBar></SearchBar>
     </q-page-container>

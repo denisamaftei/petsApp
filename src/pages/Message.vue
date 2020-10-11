@@ -42,11 +42,16 @@
   </div>
 </q-page-container>
 </template>
+
 <style >
 .input-text{
     min-width: 100%;
+    position: absolute;
+    bottom: 7vh;
+    
 }
 .q-page-container {
     min-height: inherit;
+    padding-bottom: 0!important;
 }
 </style>
