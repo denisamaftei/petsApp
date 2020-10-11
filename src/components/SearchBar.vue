@@ -32,8 +32,6 @@ export default {
   background-color: #533549ec;
    border-radius: 10px;
 }
-
-
 .q-field__native, .q-field__prefix, .q-field__suffix, .q-field__input {
   color: #fff;
 }
@@ -42,7 +40,6 @@ export default {
   flex-direction: row-reverse;
 }
 .text-accent{
-
   border-radius: 10px;
 }
 .q-field--filled .q-field__control::after{
@@ -54,7 +51,7 @@ margin-right: 2vw;
   padding-right: 15px;
   opacity: .8;
 }
-.q-field__append{
+.q-field__append {
   padding-left: 0;
 }
 </style>

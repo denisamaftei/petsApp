@@ -36,7 +36,6 @@ export default {
 height: 160px;
   width: 160px;
   margin-bottom: 30px;
-  background-color: primary;
   
 }
 .q-card__section--vert{
