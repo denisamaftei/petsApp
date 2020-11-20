@@ -15,10 +15,6 @@
          <q-route-tab  to="/profile" name="profile" icon="fas fa-user" />
       </q-tabs>
     </q-footer>
-    
-        
-
- 
   </q-layout>
 </template>
 
@@ -82,7 +78,7 @@ export default {
   }
 }
 </script>
-<style >
+<style>
 
 .q-tab__alert {
     top: 10px;
@@ -92,7 +88,7 @@ export default {
   color: #F6B042
 }
 .add .q-tab__icon{
-  background-color: white;
+background-color: white;
 border-radius: 100%;
 font-size: 40px;
 }
