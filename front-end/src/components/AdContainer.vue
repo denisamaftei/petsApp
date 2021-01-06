@@ -12,7 +12,7 @@
 
           <q-card-section>
             <div class="text-h6">Card #{{ index }}</div>
-            <div class="text-subtitle2">by John Doe</div>
+            <div class="text-subtitle2">by John Doe {{ index }}</div>
           </q-card-section>
         </q-card>
       </q-intersection>
@@ -41,6 +41,10 @@ height: 160px;
 .q-card__section--vert{
     background-color: #533549;
     color: #fff
+}
+.text-h6 {
+  font-weight: 900;
+  font-family: Cardo-Bold, Arial, Helvetica, sans-serif;
 }
   
   

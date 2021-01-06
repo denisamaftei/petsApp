@@ -1,19 +1,19 @@
 <template>
     <q-page-container>
         <div class="q-pa-md q-gutter-md">
-    <q-list bordered class="rounded-borders" style="max-width: 350px">
-      <q-item-label header>Conversations</q-item-label>
+          <q-list bordered class="rounded-borders">
+            <q-item-label class="conv-header" header>Conversații</q-item-label>
 
-      <q-item to="/message" clickable v-ripple>
-        <q-item-section avatar>
-          <q-avatar>
-            <img src="https://cdn.quasar.dev/img/avatar2.jpg">
-          </q-avatar>
-        </q-item-section>
+            <q-item to="/message" clickable v-ripple>
+              <q-item-section avatar>
+                <q-avatar>
+                  <img src="https://cdn.quasar.dev/img/avatar2.jpg">
+                </q-avatar>
+              </q-item-section>
 
-        <q-item-section>
-          <q-item-label lines="1">Brunch this weekend?</q-item-label>
-          <q-item-label caption lines="2">
+                <q-item-section>
+                  <q-item-label lines="1">Brunch this weekend?</q-item-label>
+                    <q-item-label caption lines="2">
             <span class="text-weight-bold">Janet</span>
             -- I'll be in your neighborhood doing errands this
             weekend. Do you want to grab brunch?
@@ -62,3 +62,13 @@ export default {
   }
 }
 </script>
+<style> 
+.rounded-borders .q-list .q-list--bordered {
+  max-width: initial;
+}
+.conv-header {
+  font-weight: 900;
+  font-family: Cardo-Bold, Arial, Helvetica, sans-serif;
+  font-size: 5vw;
+}
+</style>
