@@ -23,4 +23,5 @@ export default {
     font-family: cardo;
     font-weight: 900;
 }
+
 </style>

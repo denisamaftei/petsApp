@@ -58,7 +58,7 @@ export default {
   }
 }
 </script>
-<style >
+<style lang="scss" scoped>
 .publish-ad-header {
   font-size: 10vw;
   margin-top: 2vh;

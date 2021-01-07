@@ -43,7 +43,7 @@
 </q-page-container>
 </template>
 
-<style >
+<style lang="scss" scoped>
 .input-text{
     min-width: 100%;
     position: absolute;
@@ -55,3 +55,4 @@
     padding-bottom: 0!important;
 }
 </style>
+

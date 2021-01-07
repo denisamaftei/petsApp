@@ -5,7 +5,7 @@
     </q-page>
    
 </template>
-<script>
+<script >
 import AdContainer from 'components/AdContainer.vue'
 import SearchBar from '../components/SearchBar.vue'
 export default {

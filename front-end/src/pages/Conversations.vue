@@ -62,7 +62,7 @@ export default {
   }
 }
 </script>
-<style> 
+<style lang="scss" scoped> 
 .rounded-borders .q-list .q-list--bordered {
   max-width: initial;
 }
