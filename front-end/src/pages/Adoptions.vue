@@ -1,7 +1,7 @@
 <template>
     <q-page >
         <SearchBar></SearchBar>
-        <AdContainer></AdContainer>
+        <AdContainer @click.native="handleClick"></AdContainer>
     </q-page>
    
 </template>
@@ -13,6 +13,12 @@ export default {
     components: {
         AdContainer,
         SearchBar
+  },
+  methods: {
+    handleClick() {
+      this.$router.push({ name: "Ad" });
+    }
+
   },
   data () {
     return {

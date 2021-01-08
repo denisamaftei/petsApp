@@ -34,7 +34,7 @@
         <q-icon class="fas fa-info icons" name="fas fa-info" color="primary"/> <div class="panel-text"> Despre aplicație</div>
       </div>
        <q-separator inset="item" />
-      <div class="icon-text log-out" v-go-back=" '/login' "> 
+      <div class="icon-text log-out" @click="handleClick"> 
         <q-icon class="fas fa-sign-out-alt icons" name="fas fa-sign-out-alt" color="primary"/> <div class="panel-text"> Ieși din cont</div>
       </div>
       </div>
@@ -47,6 +47,11 @@ export default {
     components: {
         // AdContainer,
         // SearchBar
+  },
+  methods: {
+      handleClick() {
+      this.$router.push({ name: "Login" });
+    }
   },
   data () {
     return {

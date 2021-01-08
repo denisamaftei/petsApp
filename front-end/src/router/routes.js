@@ -3,21 +3,55 @@ const routes = [
   {
     path: '/',
     component: () => import('layouts/MainLayout.vue'),
+    meta: {
+      requiresAuth: true
+    },
     children: [
-      { path: '', component: () => import('pages/Adoptions.vue'), },
-      { path: '/caring', component: () => import('pages/Caring.vue'), name: 'Caring'},
-      { path: '/add', component: () => import('pages/Add.vue')},
-      { path: '/conversations', component: () => import('pages/Conversations.vue')},
-      { path: '/profile', component: () => import('pages/Profile.vue')},
-      { path: '/message', component: () => import('pages/Message.vue')}
+      { path: '/', 
+        component: () => import('pages/Adoptions.vue'),
+        name:'Adoptions'
+      },
+      { 
+        path: '/caring', 
+        component: () => import('pages/Caring.vue'), 
+        name: 'Caring'
+      },
+      { 
+        path: '/add', 
+        component: () => import('pages/Add.vue'),
+        name: 'Add'
+      },
+      { 
+        path: '/conversations', 
+        component: () => import('pages/Conversations.vue'),
+        name: 'Conversations'
+      },
+      { 
+        path: '/profile', 
+        component: () => import('pages/Profile.vue'),
+        name: 'Profile'
+      },
+      { 
+        path: '/message', 
+        component: () => import('pages/Message.vue'),
+        name: 'Message'
+      },
+        { 
+        path: '/ad', 
+        component: () => import('pages/AdPage.vue'),
+        name: 'Ad'
+      },
     ]
   },
   {
     path: '/login',
     component: () => import('layouts/AuthLayout.vue'),
     children: [
-      { path: '/sign-up', component: () => import ('pages/Register.vue')},
-      { path: '/login', component: () => import ('pages/Login.vue')}
+      { 
+        path: '/', 
+        component: () => import ('pages/Login.vue'),
+        name: 'Login'
+      }
     ]
   },
 
