@@ -3,7 +3,7 @@
         <div class="q-pa-md row justify-center">
          <div class="login-info">
          <q-input lazy-rules
-            :rules="[ val => val && val.length > 0 || 'Trebuie să introduci un email valid']" 
+            :rules="[ val => val && val.length > 0 || 'Trebuie să introduci un email valid']"
             standout="bg-teal text-white" class="ad-info" v-model="email" label="Email"/>
         <q-input v-model="password" filled :type="isPwd ? 'password' : 'text'" label="Parolă">
         <template v-slot:append>
@@ -14,7 +14,7 @@
           />
         </template>
       </q-input>
-      <q-btn :loading="loading1" color="primary" @click="simulateProgress(1)" label="Intră în cont" 
+      <q-btn :loading="loading1" color="primary" @click="simulateProgress(1)" label="Intră în cont"
       class="login-btn" to="/" />
          </div>
         </div>
